@@ -21,4 +21,64 @@
       }
     }
   
+    .areas {
+      width: 100%;
+      display: grid;
+      margin-top: 24px;
+      gap: 16px;
+  
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: var(--color-secondary-medium);
+        border-radius: 20px;
+  
+        &__icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__icon.machine-learning {
+          background-color: #373155;
+        }
+
+        &__icon.computer-vision {
+          background-color: #2C3455;
+        }
+
+        &__icon.natural-language {
+          background-color: #274255;
+        }
+
+        &__icon.robotics {
+          background-color: #3D413F;
+        }
+
+        &__icon img {
+            width: 50%;
+            height: 50%;
+        }
+  
+        &__title {
+          @include header-3;
+          margin: 16px 0;
+        }
+  
+        &__description {
+          opacity: .5;
+          text-align: center;
+          @include body-2;
+          margin: 0;; 
+        }
+      }
+    }
   }
+  
+  
