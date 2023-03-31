@@ -82,3 +82,73 @@
   }
   
   
+  @media screen and (min-width: 600px) {
+    #home-page {
+      max-width: 496px;
+
+      .introduction {
+        &__title {
+          @include header-1;
+        }
+      }
+
+      .areas {
+        margin-top: 8px;
+        grid-template-columns: 240px 240px;
+      }
+    }
+  }
+
+  
+
+  @media screen and (min-width: 992px) {
+    body { 
+      display: flex; 
+      align-items: center; 
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    #home-page {
+      flex-direction: row;
+      max-width: 1136px;
+
+      .introduction {
+        margin-right: 109px;
+  
+        &__title {
+          @include header-1;
+          margin: 0;
+        }
+    
+        &__description {
+          margin-top: 24px;
+          @include body-1;
+        }
+      }
+  
+      .areas {
+        column-gap: 24px;
+        row-gap: 31px;
+        grid-template-columns: 268px 268px;
+        margin: 0;
+      
+      
+        & .card {
+          padding: 24px 16px;
+  
+          &__icon {
+            width: 64px;
+            height: 64px;
+          }
+
+          &__description {
+            @include body-1;
+          }
+        }
+        
+      }
+      
+    }
+  }
+  
