@@ -1,2 +1,24 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+
+@use "/src/global-styles/styles/mixins.scss" as *;
+
+#home-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .introduction {
+  
+      &__title {
+        @include header-2;
+        margin-bottom: 0;
+        margin-top: 1em;
+      }
+  
+      &__description {
+        @include body-1;
+      }
+    }
+  
+  }
