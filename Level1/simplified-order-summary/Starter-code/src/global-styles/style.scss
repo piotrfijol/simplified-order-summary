@@ -6,10 +6,7 @@
 @import "styles/fonts.scss";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Manrope', sans-serif;
   color: var(--color-primary);
-}
-
-p {
-  color: var(--color-on-surface);
+  padding: 16px;
 }
