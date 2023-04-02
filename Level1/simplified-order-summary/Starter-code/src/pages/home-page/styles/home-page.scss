@@ -1,2 +1,137 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+
+#home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .order-summary {
+        border-radius: 16px;
+        overflow: hidden;
+        max-width: 343px;
+
+        &__thumbnail {
+            height: 188px;
+            background-image: url('images/AdobeStock_331830515.png');
+            background-size: 455px  230px;
+            background-position: 50% 50%;
+        }
+
+        &__content {
+            padding: 16px;
+            padding-top: 12px;
+            background-color: #FFF;
+        }
+        
+        &__content > div {
+            margin-top: 2rem;
+        }
+
+        &__.title {
+            color: var(--color-title);
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+
+        &__.body {
+            color: var(--color-text-medium);
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            letter-spacing: -0.01em;
+        }
+
+        & .subscription {
+            background-color: var(--color-background);
+            border-radius: 16px;
+            padding: 16px 0;
+            display: flex;
+            align-items: center;
+        
+            &__icon {
+                padding: 0 1.25rem;
+            }
+
+            &__stroke {
+                height: 43px;
+                width: 1px;
+                background-color: var(--color-stroke);
+            }
+            
+            &__container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex: 1;
+            }
+
+            &__.info {
+                margin-left: 24px;
+            }
+
+            &__.plan {
+                font-weight: 700;
+                color: var(--color-title);
+                font-size: 1rem;
+                line-height: 1.375rem;
+                margin: 2px 0;
+            }
+
+            &__.price {
+                font-size: 0.75rem;
+                line-height: 1.2rem;
+                margin: 0;
+                color: #85859B;
+                letter-spacing: -0.01em;
+            }
+
+            &__.change {
+                color: var(--color-primary);
+                font-weight: 700;
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                letter-spacing: -0.01em;
+                margin-right: 24px;
+            }
+        }
+    
+        &__.buttons {
+            text-align: center;
+        }
+
+        &__.payment-btn {
+            display: block;
+            width: 100%;
+            border-radius: 16px;
+            border: none;
+            background-color: var(--color-primary);
+            color: #FFF;
+            padding: 0.9375rem 0;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.6rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__.payment-btn:hover {
+            cursor: pointer;
+            background-color: #490245;
+            transition: background-color 0.15s ease-out;
+        }
+
+        &__.cancel {
+            display: inline-block;
+            padding: 20px 0;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--color-title);
+            line-height: 1.375rem;
+        }
+    }
+}
