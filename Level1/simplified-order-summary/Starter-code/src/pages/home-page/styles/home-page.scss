@@ -7,6 +7,10 @@
     justify-content: center;
     height: 100%;
 
+    a:hover {
+        opacity: 0.65;
+    }
+
     .order-summary {
         border-radius: 16px;
         overflow: hidden;
